@@ -1,84 +1,75 @@
-============================================================
+==============================
 One run check: example string
 Target word: Dubna
-hash time: 0.000100 seconds
-trie time: 0.000082 seconds
-word count:
-  hash: 0
-  trie: 0
-  expected: 0
-unique words:
-  hash: 8
-  trie: 8
-  expected: 8
-trie nodes:
-  trie: 19
-  expected: 19
+hash time: 0.000013s
+trie time: 0.000020s
+hash word count: 0
+trie word count: 0
+hash unique words: 8
+trie unique words: 8
+trie nodes: 19
+Expected word count: 0
+Expected unique words: 8
+Expected trie nodes: 19
 Check: OK
 
-Reading file: D:/яЁюур/╤└╬─/Project4/simplewiki-20260201.txt
-File size: 254342011 bytes
-============================================================
+Reading simplewiki file: D:/яЁюур/╤└╬─/Project4/simplewiki-20260201.txt
+simplewiki size: 254342011 bytes
+
+==============================
 One run check: simplewiki-20260201.txt
 Target word: Dubna
-hash time: 66.268298 seconds
-trie time: 45.572297 seconds
-word count:
-  hash: 17
-  trie: 17
-  expected: 17
-unique words:
-  hash: 610625
-  trie: 610625
-  expected: 610625
-trie nodes:
-  trie: 1939049
-  expected: 1939049
+hash time: 6.544029s
+trie time: 7.972344s
+hash word count: 17
+trie word count: 17
+hash unique words: 610625
+trie unique words: 610625
+trie nodes: 1939049
+Expected word count: 17
+Expected unique words: 610625
+Expected trie nodes: 1939049
 Check: OK
 
-Reading file: D:/яЁюур/╤└╬─/Project4/engwiki-ascii-20260201_1gb.txt
-File size: 1073741824 bytes
-============================================================
+Reading engwiki file: D:/яЁюур/╤└╬─/Project4/engwiki-ascii-20260201_1gb.txt
+engwiki size: 1073741824 bytes
+
+==============================
 One run check: engwiki-ascii-20260201_1gb.txt
 Target word: Dubna
-hash time: 232.787195 seconds
-trie time: 192.037651 seconds
-word count:
-  hash: 119
-  trie: 119
-  expected: 119
-unique words:
-  hash: 1428994
-  trie: 1428994
-  expected: 1428994
-trie nodes:
-  trie: 4836427
-  expected: 4836427
+hash time: 36.636181s
+trie time: 34.872397s
+hash word count: 119
+trie word count: 119
+hash unique words: 1428994
+trie unique words: 1428994
+trie nodes: 4836427
+Expected word count: 119
+Expected unique words: 1428994
+Expected trie nodes: 4836427
 Check: OK
 
-============================================================
-Speed test for engwiki
-Reading file: D:/яЁюур/╤└╬─/Project4/engwiki-ascii-20260201_1gb.txt
-File size: 1073741824 bytes
+==============================
+Benchmark: engwiki-ascii-20260201_1gb.txt
 Runs: 10
 Target word: Dubna
 
-Run 1: hash=174.854248s, trie=152.569556s, same_counts=true
-Run 2: hash=153.102300s, trie=138.525880s, same_counts=true
-Run 3: hash=162.891005s, trie=230.783834s, same_counts=true
-Run 4: hash=310.198236s, trie=243.230489s, same_counts=true
-Run 5: hash=189.907964s, trie=178.799253s, same_counts=true
-Run 6: hash=177.259336s, trie=176.282511s, same_counts=true
-Run 7: hash=187.697777s, trie=153.255682s, same_counts=true
-Run 8: hash=167.318509s, trie=196.012374s, same_counts=true
-Run 9: hash=173.739205s, trie=166.801141s, same_counts=true
-Run 10: hash=204.012559s, trie=165.415448s, same_counts=true
+Run 1: hash=34.393498s, trie=32.720292s, same_counts=true
+Run 2: hash=33.711303s, trie=31.537887s, same_counts=true
+Run 3: hash=35.185674s, trie=31.871133s, same_counts=true
+Run 4: hash=35.036226s, trie=32.822157s, same_counts=true
+Run 5: hash=33.167239s, trie=29.155802s, same_counts=true
+Run 6: hash=31.594721s, trie=29.804509s, same_counts=true
+Run 7: hash=37.048837s, trie=32.937772s, same_counts=true
+Run 8: hash=34.814832s, trie=32.807887s, same_counts=true
+Run 9: hash=28.910007s, trie=28.965149s, same_counts=true
+Run 10: hash=34.737347s, trie=32.523152s, same_counts=true
 
-hash: {174.854248, 153.102300, 162.891005, 310.198236, 189.907964, 177.259336, 187.697777, 167.318509, 173.739205, 204.012559}
-trie: {152.569556, 138.525880, 230.783834, 243.230489, 178.799253, 176.282511, 153.255682, 196.012374, 166.801141, 165.415448}
-hash mean: 190.098114 seconds
-trie mean: 180.167617 seconds
-Average speedup: 1.055118x
+hash: {34.393498, 33.711303, 35.185674, 35.036226, 33.167239, 31.594721, 37.048837, 34.814832, 28.910007, 34.737347}
+trie: {32.720292, 31.537887, 31.871133, 32.822157, 29.155802, 29.804509, 32.937772, 32.807887, 28.965149, 32.523152}
+hash mean: 33.859968 seconds
+trie mean: 31.514574 seconds
+Average speedup: 1.074423x
 
-D:\прога\САОД\Project4\x64\Debug\Project4.exe (процесс 2064) завершил работу с кодом 0.
+D:\прога\САОД\Project4\x64\Release\Project4.exe (процесс 1560) завершил работу с кодом 0.
 Нажмите любую клавишу, чтобы закрыть это окно:
