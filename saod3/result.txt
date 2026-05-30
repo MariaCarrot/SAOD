@@ -1,8 +1,8 @@
 ========================================
 One run check: example string
 Target word: Dubna
-hash time: 0.000051 seconds
-trie time: 0.000031 seconds
+hash time: 0.000041 seconds
+trie time: 0.000025 seconds
 hash word count: 0
 trie word count: 0
 expected word count: 0
@@ -19,8 +19,8 @@ File size: 254342011 bytes
 ========================================
 One run check: simplewiki-20260201.txt
 Target word: Dubna
-hash time: 6.797975 seconds
-trie time: 7.919907 seconds
+hash time: 7.271955 seconds
+trie time: 5.589064 seconds
 hash word count: 17
 trie word count: 17
 expected word count: 17
@@ -37,8 +37,8 @@ File size: 1073741824 bytes
 ========================================
 One run check: engwiki-ascii-20260201_1gb.txt
 Target word: Dubna
-hash time: 34.918505 seconds
-trie time: 36.354280 seconds
+hash time: 34.704898 seconds
+trie time: 27.526489 seconds
 hash word count: 119
 trie word count: 119
 expected word count: 119
@@ -54,23 +54,23 @@ Benchmark: engwiki-ascii-20260201_1gb.txt
 Runs: 10
 Target word: Dubna
 
-Run 1: hash=35.996299s, trie=35.581787s, same_counts=true
-Run 2: hash=34.138112s, trie=34.142000s, same_counts=true
-Run 3: hash=35.820478s, trie=35.216549s, same_counts=true
-Run 4: hash=34.840714s, trie=34.861799s, same_counts=true
-Run 5: hash=34.536440s, trie=34.844411s, same_counts=true
-Run 6: hash=35.120322s, trie=36.086165s, same_counts=true
-Run 7: hash=34.598934s, trie=35.669763s, same_counts=true
-Run 8: hash=35.173609s, trie=35.257901s, same_counts=true
-Run 9: hash=34.505376s, trie=34.265627s, same_counts=true
-Run 10: hash=33.769327s, trie=32.525656s, same_counts=true
+Run 1: hash=35.119106s, trie=25.641779s, same_counts=true
+Run 2: hash=34.095075s, trie=23.743844s, same_counts=true
+Run 3: hash=34.555005s, trie=26.412221s, same_counts=true
+Run 4: hash=34.671295s, trie=25.468374s, same_counts=true
+Run 5: hash=35.465489s, trie=25.371672s, same_counts=true
+Run 6: hash=33.716776s, trie=25.190930s, same_counts=true
+Run 7: hash=33.535457s, trie=25.462957s, same_counts=true
+Run 8: hash=33.766290s, trie=26.591821s, same_counts=true
+Run 9: hash=33.170190s, trie=23.426438s, same_counts=true
+Run 10: hash=33.651899s, trie=24.120255s, same_counts=true
 
-hash: {35.996299, 34.138112, 35.820478, 34.840714, 34.536440, 35.120322, 34.598934, 35.173609, 34.505376, 33.769327}
-trie: {35.581787, 34.142000, 35.216549, 34.861799, 34.844411, 36.086165, 35.669763, 35.257901, 34.265627, 32.525656}
-hash mean: 34.849961 seconds
-trie mean: 34.845166 seconds
-Average speedup: 1.000138x
+hash: {35.119106, 34.095075, 34.555005, 34.671295, 35.465489, 33.716776, 33.535457, 33.766290, 33.170190, 33.651899}
+trie: {25.641779, 23.743844, 26.412221, 25.468374, 25.371672, 25.190930, 25.462957, 26.591821, 23.426438, 24.120255}
+hash mean: 34.174658 seconds
+trie mean: 25.143029 seconds
+Average speedup: 1.359210x
 
 
-D:\прога\САОД\Project4\x64\Release\Project4.exe (процесс 17716) завершил работу с кодом 0.
+D:\прога\САОД\Project4\x64\Release\Project4.exe (процесс 1856) завершил работу с кодом 0.
 Нажмите любую клавишу, чтобы закрыть это окно:
