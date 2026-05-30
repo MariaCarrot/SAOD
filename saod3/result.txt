@@ -1,75 +1,76 @@
-==============================
+========================================
 One run check: example string
 Target word: Dubna
-hash time: 0.000013s
-trie time: 0.000020s
+hash time: 0.000051 seconds
+trie time: 0.000031 seconds
 hash word count: 0
 trie word count: 0
+expected word count: 0
 hash unique words: 8
 trie unique words: 8
+expected unique words: 8
 trie nodes: 19
-Expected word count: 0
-Expected unique words: 8
-Expected trie nodes: 19
+expected nodes: 19
 Check: OK
 
-Reading simplewiki file: D:/яЁюур/╤└╬─/Project4/simplewiki-20260201.txt
-simplewiki size: 254342011 bytes
+Reading file: D:/яЁюур/╤└╬─/Project4/simplewiki-20260201.txt
+File size: 254342011 bytes
 
-==============================
+========================================
 One run check: simplewiki-20260201.txt
 Target word: Dubna
-hash time: 6.544029s
-trie time: 7.972344s
+hash time: 6.797975 seconds
+trie time: 7.919907 seconds
 hash word count: 17
 trie word count: 17
+expected word count: 17
 hash unique words: 610625
 trie unique words: 610625
+expected unique words: 610625
 trie nodes: 1939049
-Expected word count: 17
-Expected unique words: 610625
-Expected trie nodes: 1939049
+expected nodes: 1939049
 Check: OK
 
-Reading engwiki file: D:/яЁюур/╤└╬─/Project4/engwiki-ascii-20260201_1gb.txt
-engwiki size: 1073741824 bytes
+Reading file: D:/яЁюур/╤└╬─/Project4/engwiki-ascii-20260201_1gb.txt
+File size: 1073741824 bytes
 
-==============================
+========================================
 One run check: engwiki-ascii-20260201_1gb.txt
 Target word: Dubna
-hash time: 36.636181s
-trie time: 34.872397s
+hash time: 34.918505 seconds
+trie time: 36.354280 seconds
 hash word count: 119
 trie word count: 119
+expected word count: 119
 hash unique words: 1428994
 trie unique words: 1428994
+expected unique words: 1428994
 trie nodes: 4836427
-Expected word count: 119
-Expected unique words: 1428994
-Expected trie nodes: 4836427
+expected nodes: 4836427
 Check: OK
 
-==============================
+========================================
 Benchmark: engwiki-ascii-20260201_1gb.txt
 Runs: 10
 Target word: Dubna
 
-Run 1: hash=34.393498s, trie=32.720292s, same_counts=true
-Run 2: hash=33.711303s, trie=31.537887s, same_counts=true
-Run 3: hash=35.185674s, trie=31.871133s, same_counts=true
-Run 4: hash=35.036226s, trie=32.822157s, same_counts=true
-Run 5: hash=33.167239s, trie=29.155802s, same_counts=true
-Run 6: hash=31.594721s, trie=29.804509s, same_counts=true
-Run 7: hash=37.048837s, trie=32.937772s, same_counts=true
-Run 8: hash=34.814832s, trie=32.807887s, same_counts=true
-Run 9: hash=28.910007s, trie=28.965149s, same_counts=true
-Run 10: hash=34.737347s, trie=32.523152s, same_counts=true
+Run 1: hash=35.996299s, trie=35.581787s, same_counts=true
+Run 2: hash=34.138112s, trie=34.142000s, same_counts=true
+Run 3: hash=35.820478s, trie=35.216549s, same_counts=true
+Run 4: hash=34.840714s, trie=34.861799s, same_counts=true
+Run 5: hash=34.536440s, trie=34.844411s, same_counts=true
+Run 6: hash=35.120322s, trie=36.086165s, same_counts=true
+Run 7: hash=34.598934s, trie=35.669763s, same_counts=true
+Run 8: hash=35.173609s, trie=35.257901s, same_counts=true
+Run 9: hash=34.505376s, trie=34.265627s, same_counts=true
+Run 10: hash=33.769327s, trie=32.525656s, same_counts=true
 
-hash: {34.393498, 33.711303, 35.185674, 35.036226, 33.167239, 31.594721, 37.048837, 34.814832, 28.910007, 34.737347}
-trie: {32.720292, 31.537887, 31.871133, 32.822157, 29.155802, 29.804509, 32.937772, 32.807887, 28.965149, 32.523152}
-hash mean: 33.859968 seconds
-trie mean: 31.514574 seconds
-Average speedup: 1.074423x
+hash: {35.996299, 34.138112, 35.820478, 34.840714, 34.536440, 35.120322, 34.598934, 35.173609, 34.505376, 33.769327}
+trie: {35.581787, 34.142000, 35.216549, 34.861799, 34.844411, 36.086165, 35.669763, 35.257901, 34.265627, 32.525656}
+hash mean: 34.849961 seconds
+trie mean: 34.845166 seconds
+Average speedup: 1.000138x
 
-D:\прога\САОД\Project4\x64\Release\Project4.exe (процесс 1560) завершил работу с кодом 0.
+
+D:\прога\САОД\Project4\x64\Release\Project4.exe (процесс 17716) завершил работу с кодом 0.
 Нажмите любую клавишу, чтобы закрыть это окно:
