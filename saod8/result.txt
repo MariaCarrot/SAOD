@@ -1,0 +1,59 @@
+This is Huffman coding compressor for ASCII text files only.
+
+========================================
+Input file: D:/яЁюур/╤└╬─/ConsoleApplication1/simplewiki-20260201.txt
+Archive file: D:/яЁюур/╤└╬─/ConsoleApplication1/simplewiki-20260201.txt.compressed
+Restored file: D:/яЁюур/╤└╬─/ConsoleApplication1/simplewiki-20260201.txt.restored
+
+Compression done!
+Original size: 254342011 bytes
+Archive size: 156947708 bytes
+Compression ratio: 254342011 bytes / 156947708 bytes = 1.621
+Compression time: 50.306 sec
+
+Decompression done!
+Decompression time: 67.986 sec
+Restored size: 254342011 bytes
+Size check: OK
+File check: OK! Restored file is identical to original.
+========================================
+
+========================================
+Input file: D:/яЁюур/╤└╬─/ConsoleApplication1/1brs-traj1.pdb
+Archive file: D:/яЁюур/╤└╬─/ConsoleApplication1/1brs-traj1.pdb.compressed
+Restored file: D:/яЁюур/╤└╬─/ConsoleApplication1/1brs-traj1.pdb.restored
+
+Compression done!
+Original size: 247178029 bytes
+Archive size: 101311706 bytes
+Compression ratio: 247178029 bytes / 101311706 bytes = 2.440
+Compression time: 39.974 sec
+
+Decompression done!
+Decompression time: 54.784 sec
+Restored size: 247178029 bytes
+Size check: OK
+File check: OK! Restored file is identical to original.
+========================================
+
+========================================
+Input file: D:/яЁюур/╤└╬─/ConsoleApplication1/400mb.fa
+Archive file: D:/яЁюур/╤└╬─/ConsoleApplication1/400mb.fa.compressed
+Restored file: D:/яЁюур/╤└╬─/ConsoleApplication1/400mb.fa.restored
+
+Compression done!
+Original size: 419430400 bytes
+Archive size: 104857753 bytes
+Compression ratio: 419430400 bytes / 104857753 bytes = 4.000
+Compression time: 50.100 sec
+
+Decompression done!
+Decompression time: 75.281 sec
+Restored size: 419430400 bytes
+Size check: OK
+File check: OK! Restored file is identical to original.
+========================================
+
+
+D:\прога\САОД\ConsoleApplication1\x64\Release\ConsoleApplication1.exe (процесс 3636) завершил работу с кодом 0.
+Нажмите любую клавишу, чтобы закрыть это окно:
