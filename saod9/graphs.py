@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 
 threads = [1, 2, 3, 4]
 
-block_speedup = [1, 1.68065, 1.90776, 2.26422]
-mutex_queue_speedup = [1, 2.26347, 2.99984, 6.12898]
-atomic_index_speedup = [1, 1.63253, 2.59409, 5.65968]
+block_speedup = [1, 1.54669, 2.6212, 2.32606]
+mutex_queue_speedup = [1, 1.76962, 2.64925, 3.14593]
+atomic_index_speedup = [1, 1.70836, 2.7429, 3.31191]
 
-block_efficiency = [1, 0.840327, 0.635919, 0.566054]
-mutex_queue_efficiency = [1, 1.13173, 0.999946, 1.53224]
-atomic_index_efficiency = [1, 0.816265, 0.864697, 1.41492]
+block_efficiency = [1, 0.773345, 0.873735, 0.581515]
+mutex_queue_efficiency = [1, 0.88481, 0.883083, 0.786482]
+atomic_index_efficiency = [1, 0.854179, 0.9143, 0.827978]
 
 # График ускорения
 plt.figure(figsize=(8, 5))
