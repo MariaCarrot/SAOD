@@ -1,18 +1,18 @@
 # Array: 41 41 43 43 43 44 44 41 46 43 44 47 42 42 41 41 43 42 48 49 40 44 47 43 43 44 45 44 45 43 44 42 44 45 43 43 42 42 45 44 45 45 42 44 44 41 44 45 43 45
 
 Single result: 30
-Single time: 895701 ms
+Single time: 857954 ms
 
 threads method          time(ms)        result  speedup         efficiency
-2       block           532948          30      1.68065         0.840327
-2       mutex_queue     395721          30      2.26347         1.13173
-2       atomic_index    548658          30      1.63253         0.816265
-3       block           469505          30      1.90776         0.635919
-3       mutex_queue     298583          30      2.99984         0.999946
-3       atomic_index    345285          30      2.59409         0.864697
-4       block           395590          30      2.26422         0.566054
-4       mutex_queue     146142          30      6.12898         1.53224
-4       atomic_index    158260          30      5.65968         1.41492
+2       block           554703          30      1.54669         0.773345
+2       mutex_queue     484824          30      1.76962         0.88481
+2       atomic_index    502210          30      1.70836         0.854179
+3       block           327313          30      2.6212          0.873735
+3       mutex_queue     323848          30      2.64925         0.883083
+3       atomic_index    312791          30      2.7429          0.9143
+4       block           368844          30      2.32606         0.581515
+4       mutex_queue     272719          30      3.14593         0.786482
+4       atomic_index    259051          30      3.31191         0.827978
 
-D:\прога\САОД\ConsoleApplication2\x64\Release\ConsoleApplication2.exe (процесс 5456) завершил работу с кодом 0.
+D:\прога\САОД\ConsoleApplication2\x64\Release\ConsoleApplication2.exe (процесс 43280) завершил работу с кодом 0.
 Нажмите любую клавишу, чтобы закрыть это окно:
