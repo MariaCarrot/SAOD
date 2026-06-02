@@ -10,6 +10,7 @@
 #include <queue>
 #include <atomic>
 #include <string>
+#include <windows.h>
 using namespace std;
 typedef unsigned long long int bigint;
 
@@ -135,19 +136,32 @@ size_t is_this_the_way(const vector<int>& v, size_t n_threads)
 
     return accumulate(results.begin(), results.end(), 0ULL);
 }
-
 long long measure_time(const function<size_t(const vector<int>&, size_t)>& func, const vector<int>& v, size_t n_threads, size_t& result)
 {
-    auto start = chrono::high_resolution_clock::now();
+    auto start = chrono::steady_clock::now();
     result = func(v, n_threads);
-    auto end = chrono::high_resolution_clock::now();
+    auto end = chrono::steady_clock::now();
     return chrono::duration_cast<chrono::milliseconds>(end - start).count();
 }
+//long long measure_time(const function<size_t(const vector<int>&, size_t)>& func, const vector<int>& v, size_t n_threads, size_t& result)
+//{
+//    clock_t start = clock();
+//    result = func(v, n_threads);
+//    clock_t end = clock();
+//
+//    double total_cpu_time = static_cast<double>(end - start) / CLOCKS_PER_SEC * 1000.0;
+//    return static_cast<long long>(total_cpu_time / n_threads);
+//}
 
 int main()
 {
+    DWORD_PTR mask = 0x0F; // 00001111 — разрешаем только первые 4 логических процессора
+    if (!SetProcessAffinityMask(GetCurrentProcess(), mask))
+    {
+        cerr << "Failed to set process affinity" << endl;
+        return 1;
+    }
     vector<int> v(50);
-
     mt19937_64 gen;
     gen.seed(1);
     poisson_distribution<> pd(4);
@@ -172,9 +186,9 @@ int main()
         "block", "mutex_queue", "atomic_index"
     };
 
-    auto start_single = chrono::high_resolution_clock::now();
+    auto start_single = chrono::steady_clock::now();
     size_t single_result = single(v);
-    auto end_single = chrono::high_resolution_clock::now();
+    auto end_single = chrono::steady_clock::now();
 
     long long single_time = chrono::duration_cast<chrono::milliseconds>(
         end_single - start_single
@@ -185,7 +199,7 @@ int main()
 
     cout << "threads\tmethod\t\ttime(ms)\tresult\tspeedup\t\tefficiency" << endl;
 
-    for (size_t th_number : { 2, 3, 4 })
+    for (size_t th_number : { 2, 3, 4})
     {
         for (size_t i = 0; i < functions.size(); i++)
         {
