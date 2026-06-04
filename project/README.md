@@ -5,9 +5,9 @@
 Примерная структура проекта:
 
 ```text
-My_project/
+project/
 │
-├── My_project/
+├── project/
 │   │ 	
 │   ├── data/
 │   │	│
@@ -31,10 +31,13 @@ My_project/
 │   ├── GraphGenerator.cpp
 │   ├── DatasetGenerator.hpp
 │   ├── DatasetGenerator.cpp
-│   └── Timer.hpp
+│   ├── Timer.hpp
+│   ├── all_query_results.csv
+│   └── all_summary_results.csv
 │
 ├── convert_snap.py
 ├── plot_analysis.py
+├── TestOracle.cpp
 └── README.md
 ```
 
