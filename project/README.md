@@ -38,6 +38,7 @@ project/
 ├── convert_snap.py
 ├── plot_analysis.py
 ├── TestOracle.cpp
+├── Пояснительная записка
 └── README.md
 ```
 
